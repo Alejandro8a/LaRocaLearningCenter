@@ -680,3 +680,52 @@ p {
   margin: 0px;
   line-height: 0.9;
 }
+
+.vida_horarios {
+  background-color: #828486;
+}
+
+.vida_horarios_gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.vida_horarios_col1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: flex-end;
+  justify-content: flex-end;
+  color: white;
+  font-size: 20px;
+  font-family: Garet;
+  width: 45%;
+}
+
+.vida_horarios_col2 {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  justify-items: center;
+  align-items:flex-end;
+  color: white;
+  font-size: 35px;
+  font-family: Garet;
+  border-style: dashed;
+  width: 50%;
+  padding-right: 40px;
+  padding-top: 40px;
+}
+
+.vida_horarios_col2_salon {
+  width: 350px;
+
+
+}
+
+.vida_horarios_col2_logo {
+  width: 70px;
+}

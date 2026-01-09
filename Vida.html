@@ -1,39 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <div id="header"></div>
-    <script>
-      // Carga header.html y lo inserta en el div#header
-      fetch('header.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('header').innerHTML = data;
-        })
-        .catch(error => console.error('Error cargando header:', error));
-    </script>
-    <h1 class="vida_h1">Vida Escolar</h1>
-      <section id="id_vida_unidos" class="vida_unidos">
-        <h2>+ Unidos <span style="letter-spacing: -3px; font-size: 30px; vertical-align: middle;">∙∙∙∙∙∙∙∙∙∙∙></span></h2>
-          <div class="vida_unidos_gallery">
-            <img src="unidos_1.png" alt="img_1">
-            <img src="unidos_2.png" alt="img_2">
-            <img src="unidos_3.png" alt="img_3">
-            <img src="unidos_4.png" alt="img_4">
-          </div>
-      </section>
-      <section id="id_vida_horarios" class="vida_horarios">
 
-      </section>
-      <section id="id_vida_galeria" class="vida_galeria">
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<div id="header"></div>
+<script>
+  // Carga header.html y lo inserta en el div#header
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header').innerHTML = data;
+    })
+    .catch(error => console.error('Error cargando header:', error));
+</script>
+<h1 class="vida_h1">Vida Escolar</h1>
+<section id="id_vida_unidos" class="vida_unidos">
+  <h2>+ Unidos <span style="letter-spacing: -3px; font-size: 20px; vertical-align: middle;">∙∙∙∙∙∙∙∙∙∙∙></span></h2>
+  <div class="vida_unidos_gallery">
+    <img src="unidos_1.png" alt="img_1">
+    <img src="unidos_2.png" alt="img_2">
+    <img src="unidos_3.png" alt="img_3">
+    <img src="unidos_4.png" alt="img_4">
+  </div>
+</section>
+<section id="id_vida_horarios" class="vida_horarios">
 
-      </section>
-      <section id="id_vida_salidas_cul" class="vida_salidas_cul">
+  <div class="vida_horarios_gallery">
+    <div class="vida_horarios_col1">
+      <p>horarios</p>
+    </div>
+    <div class="vida_horarios_col2">
+      <img class="vida_horarios_col2_salon" src="img_horarios.png" alt="horarios">
+      <img class="vida_horarios_col2_logo" src="Logo.png" alt="logo_horarios">
+      <h2>HORARIOS</h2>
+    </div>
+  </div>
+</section>
+<section id="id_vida_galeria" class="vida_galeria">
 
-      </section>
-      <section id="id_vida_eventos_e" class="vida_eventos_e">
+</section>
+<section id="id_vida_salidas_cul" class="vida_salidas_cul">
 
-      </section>
-  </body>
+</section>
+<section id="id_vida_eventos_e" class="vida_eventos_e">
+
+</section>
+</body>
+
 </html>

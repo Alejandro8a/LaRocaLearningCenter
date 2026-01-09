@@ -1,0 +1,627 @@
+@font-face {
+  font-family: "Garet";
+  /* Name you will use in CSS */
+  src: url("fonts/garet.book.otf") format("opentype");
+  /* Path to your file and format descriptor */
+  font-weight: normal;
+  font-style: normal;
+  /* Optional: use font-display: swap; for better performance */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playlist";
+  /* Name you will use in CSS */
+  src: url("fonts/Playlist\ Script.otf") format("opentype");
+  /* Path to your file and format descriptor */
+  font-weight: normal;
+  font-style: normal;
+  /* Optional: use font-display: swap; for better performance */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Tex";
+  /* Name you will use in CSS */
+  src: url("fonts/texgyretermes-regular.otf") format("opentype");
+  /* Path to your file and format descriptor */
+  font-weight: normal;
+  font-style: normal;
+  /* Optional: use font-display: swap; for better performance */
+  font-display: swap;
+}
+
+h1 {
+  text-align: center;
+  font-family: Garet;
+}
+
+h2 {
+  font-family: Garet;
+  text-align: center;
+}
+
+h3 {
+  font-family: Garet;
+  text-align: center;
+}
+
+p {
+  font-family: Garet;
+}
+
+
+a {
+  font-family: Garet;
+  font-size: 18px;
+  color: gray;
+  text-decoration: none;
+}
+
+/* contenedor principal con 2 columnas */
+.full_navbar {
+  display: grid;
+  grid-template-rows: auto auto;
+  align-items: center;
+}
+
+.row1 {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  border-style: solid;
+  border: 3px;
+}
+
+.row2 {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: left;
+  justify-content: left;
+  background: rgba(255, 255, 255, 0);
+}
+
+.row2 img {
+  width: 100px;
+  padding: 10px 0px 5px 90px;
+}
+
+/* fila 1: menú */
+.menu {
+  background: rgba(255, 255, 255, 0);
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  gap: 5px;
+  padding-left: 50px;
+}
+
+/* enlaces del menú */
+.menu a {
+  text-decoration: none;
+  color: #444;
+  font-family: Garet;
+  font-size: 18px;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar>ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
+}
+
+.navbar ul li {
+  position: relative;
+  flex: 0 1 auto;
+}
+
+.navbar ul li:hover>.sub_navbar {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.navbar a {
+  color: #656768;
+  text-decoration: none;
+  display: block;
+}
+
+.sub_navbar {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  min-width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+.sub_navbar li a {
+  display: block;
+  padding: 8px 15px;
+  color: #444;
+  text-decoration: none;
+}
+
+.sub_navbar li a:hover {
+  background: #f2f2f2;
+}
+
+.franja {
+  background-color: #828486;
+  height: auto;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+
+}
+
+/* fila 2: franja gris */
+.franja a {
+  font-family: Garet;
+  text-align: right;
+  padding-right: 50px;
+  color: white;
+
+}
+
+.lrlc1 {
+  font-family: Tex;
+  font-size: 42px;
+  text-align: center;
+  align-items: flex-end;
+  background-color: #828486;
+  color: white;
+  padding: 5px 0px 0px 50px;
+  line-height: 80%;
+
+}
+
+.lrlc2 {
+  font-family: Playlist;
+  font-size: 22px;
+  text-align: center;
+  align-items: flex-start;
+  background-color: #828486;
+  color: white;
+  padding: 0px 0px 5px 50px;
+  line-height: 80%;
+}
+
+p {
+  text-align: center;
+  font-size: 15px;
+}
+
+.formacion_galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.formacion_tarjeta {
+  position: relative;
+}
+
+.formacion_tarjeta img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.formacion_overlay {
+  position: absolute;
+  bottom: 33%;
+  width: 100%;
+  padding: 12px 24px 12px 12px;
+  color: white;
+  font-family: Garet;
+  text-align: justify;
+  text-justify: inter-word;
+  word-wrap: normal;
+  background-color: rgba(130, 132, 134, 0.70);
+}
+
+.formacion_overlay>p {
+  width: 95%;
+  font-weight: bold;
+}
+
+/*testimonios*/
+.testim_h1 {
+  font-size: 40px;
+  font-family: Garet;
+}
+
+.testim-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin: 20px;
+  padding-right: 80px;
+}
+
+.testim-card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  height: 500px;
+  width: 250px;
+
+}
+
+.testim-card>h4 {
+  font-family: Garet;
+}
+
+.testim-card>p {
+  margin-top: 20px;
+  padding-top: 0px;
+  font-family: Garet;
+}
+
+.testim-card>img {
+
+  width: 250px;
+  height: 190px;
+  align-items: center;
+
+}
+
+.testim-card-b {
+  background-color: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  height: 500px;
+  width: 250px;
+}
+
+.testim-card-b>p {
+  margin-top: 20px;
+  padding-top: 0px;
+  font-family: Garet;
+}
+
+.testim-card-b>img {
+  width: auto;
+  height: 200px;
+
+}
+
+.testim-card-b>h4 {
+  font-family: Garet;
+}
+
+.inicio_galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  /*background-image: url('fondo_inicio.png');*/
+}
+
+.inicio_texto {
+  /* padding: 20px 0 20px 80px;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: last baseline;
+  flex-wrap: wrap;
+}
+
+.inicio_texto a {
+  border-style: solid;
+  border-color: #bad34b;
+  color: black;
+  font-family: Garet;
+  padding: 3px 30px 3px 30px;
+}
+
+.inicio_texto h2 {
+  font-size: 40px;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  line-height: 80%;
+  text-align: left;
+}
+
+.inicio_texto h3 {
+  font-size: 30px;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  text-align: left;
+
+}
+
+.inicio_texto p {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  text-align: left;
+}
+
+.inicio_aniversario {
+  padding: 200px 0 20px 0;
+  bottom: 30%;
+}
+
+.nivel_a_leyes_ace {
+  padding-bottom: 20px;
+}
+
+.nivel_a_leyes_gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nivel_a_card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /*align-content: flex-start;*/
+  text-align: center;
+  height: 350px;
+  width: 200px;
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+
+.nivel_a_card>h3 {
+  font-family: Garet;
+  width: 100%;
+  min-height: 70px;
+  margin: 0;
+}
+
+.nivel_a_card>p {
+  display: block;
+  padding: 0 15px;
+  margin: 8px 0;
+  font-family: Garet;
+  /*height: 100%;*/
+  width: 80%;
+}
+
+.nivel_a_card>img {
+  width: 80px;
+  height: 80px;
+  padding-bottom: 20px;
+}
+
+.nivel_a_sistema_ace {
+  background: #e6e6e6;
+  padding: 20px;
+}
+
+.nivel_a_sistema_gallery {
+  display: grid;
+  grid-template-columns: 57% 43%;
+  flex-wrap: wrap;
+}
+
+.nivel_a_sistema_col1 {
+  justify-items: flex-end;
+  padding: 20px 20px 20px 0px;
+}
+
+.nivel_a_sistema_col1>p {
+  text-align: right;
+  width: 80%;
+
+}
+
+.nivel_a_sistema_col2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  align-items: flex-end;
+  margin: 0px;
+}
+
+.nivel_a_sistema_col2_paces {
+  grid-row: 1/3;
+  grid-column: 1;
+  width: 260px;
+  padding-bottom: 46px;
+}
+
+.nivel_a_sistema_col2_logo_transparente {
+
+  width: 200px;
+  justify-self: center;
+  /*padding-left: 200px;*/
+}
+
+.nivel_a_sistema_col2>p {
+  text-align: left;
+  width: 220px;
+  padding-top: 60px;
+}
+
+.nivel_a_escuela_calidad {
+  padding: 20px;
+}
+
+.nivel_a_calidad_gallery {
+  display: grid;
+  grid-template-rows: auto max-content;
+  justify-items: center;
+}
+
+.nivel_a_calidad_row1 {
+  justify-items: center;
+  display: grid;
+  grid-template-rows: auto auto;
+  width: 60%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  ;
+}
+
+.nivel_a_calidad_row1>p {
+  font-family: Garet;
+  width: 60%;
+}
+
+.nivel_a_calidad_row1>img {
+  width: 100px;
+}
+
+.nivel_a_calldad_row2 {
+  width: 60%;
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+}
+
+.nivel_a_calidad_row2>p {
+
+  padding: 10px;
+  background-color: #2c307f;
+  color: white;
+}
+
+.nivel_a_revalidacion_gallery {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.nivel_a_revalidacion_col1 {
+  display: grid;
+  grid-template-rows: auto auto;
+  align-items: center;
+  justify-content: space-evenly;
+  justify-items: center;
+}
+
+.nivel_a_revalidacion_col1>p {
+  width: 70%;
+}
+
+.nivel_a_revalidacion_col2 {
+  background-image: url('revalidacion.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 450px;
+  margin: 0px;
+
+}
+
+.nivel_a_grados_gallery1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.nivel_a_grados_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  height: auto;
+  width: 360px;
+  margin-top: 50px;
+  padding-top: 260px;
+  position: relative;
+  padding-bottom: 30px;
+  border-style: solid;
+  border-color: #9ea0a1;
+  border-width: 1px;
+}
+.nivel_a_grados_card1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  height: auto;
+  width: 360px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px; 
+  padding-bottom: 20px;  
+  position: relative;
+  border-style: solid;
+  border-color: #9ea0a1;
+  border-width: 1px;
+}
+
+.nivel_a_grados_card > h3 {
+  font-family: Garet;
+  width: 100%;
+  min-height: 70px;
+  margin: 5px;
+  color: #2c05f2;
+}
+.nivel_a_grados_card1 > h3 {
+  font-family: Garet;
+  width: 100%;
+  min-height: 70px;
+  margin: 5px;
+  color: #2c05f2;
+}
+
+.nivel_a_grados_card>p {
+  display: block;
+  padding: 0 5px;
+  margin: 8px 0;
+  font-family: Garet;
+  width: 90%;
+}
+
+.nivel_a_grados_card>img {
+  width: 270px;
+  height: 270px;
+  object-fit: cover;
+}
+
+.nivel_a_grados_card_img {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.nivel_a_grados_card_img1 {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+}

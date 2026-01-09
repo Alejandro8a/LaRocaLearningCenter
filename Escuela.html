@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div id="header"></div>
+  <script>
+    // Carga header.html y lo inserta en el div#header
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      })
+      .catch(error => console.error('Error cargando header:', error));
+  </script>
+  <h1>Escuela</h1>
+  <h2>7 Razones para estudiar en La Roca Learning Center:</h2>
+  <ul>
+    <li> Integración de principios bíblicos</li>
+    <li> Formación de carácter cristiano</li>
+    <li> Aprendizaje individualizado</li>
+    <li>Dominio del conocimiento</li>
+    <li>Pensamiento crítico</li>
+    <li>Educación bilingüe</li>
+    <li>Profesores comprometidos</li>
+  </ul>
+
+</body>
+
+</html>

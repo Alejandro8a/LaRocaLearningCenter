@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="header"></div>
+    <script>
+      // Carga header.html y lo inserta en el div#header
+      fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('header').innerHTML = data;
+        })
+        .catch(error => console.error('Error cargando header:', error));
+    </script>
+
+    <h1>Comunidad</h1>
+    
+  </body>
+</html>

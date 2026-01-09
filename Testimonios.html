@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="header"></div>
+    <script>
+      // Carga header.html y lo inserta en el div#header
+      fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('header').innerHTML = data;
+        })
+        .catch(error => console.error('Error cargando header:', error));
+    </script>
+
+    <h1 style="text-align: left; padding-left: 150px;" class="testim_h1">Testimonios</h1>
+
+        <div class="testim-gallery">
+            <div class="testim-card-b" >
+                <p>La forma de enseñar a los niños es buena, la forma en como aprenden día con día de la palabra de Dios y al mismo tiempo su enseñaza es buena.</p>
+                <img src="alabanza.jpg" alt="">
+                <h4 class="h3">Karla R.</h4>
+            </div>
+      
+            <div class="testim-card" >
+                <p>Lo mejor que nos pudo haber pasado fue encontrar esta escuela, ha sido de gran bendicíon para mi hija!!!! Excelente nivel académico.</p>
+                <img src="chapel.png" alt="">
+                <h4 class="h3">Maribel G.</h4>
+            </div>
+            <div class="testim-card-b" >
+                <p>texto3</p>
+                <img src="devocional.jpg" alt="">
+                <h4 class="h3">Nombre</h4>
+            </div>
+        </div>
+    
+    
+  </body>
+</html>

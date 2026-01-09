@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="header"></div>
+  <script>
+    // Carga header.html y lo inserta en el div#header
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      })
+      .catch(error => console.error('Error cargando header:', error));
+  </script>
+
+  <h1>Contacto</h1>
+  <h2>Dirección:</h2>
+  <h2>Humboldt 61</h2>
+  <h2>Col. Centro, C.P 06200</h2>
+  <h2>Cuernavaca, Morelos</h2>
+  <h2>Tel: 777-310-4007</h2>
+  <h2>Correo: larocalc7@gmail.com</h2>
+
+</body>
+
+</html>

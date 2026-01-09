@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-image: url('fondo_inicio.png');">
+  <div id="header"></div>
+  <script>
+    // Carga header.html y lo inserta en el div#header
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      })
+      .catch(error => console.error('Error cargando header:', error));
+  </script>
+  <div class="inicio_galeria">
+    <div class="inicio_texto">
+      <h3>Que Dios sea tu guía</h3>
+      <h2>FORMACIÓN CRISTIANA Y</h2>
+      <h2>SISTEMA A.C.E.</h2>
+      <p>"Train up a child in the way he should go:</p>
+      <p>and when he is old, he will not depart from it."</p>
+      <p>Proverbs 22:6 KJV</p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <a href="Nivel-academico.html">VER MAS</a>
+    </div>
+    <div class="inicio_aniversario">
+      <img src="aniversario.png" alt="aniversario">
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="header"></div>
+    <script>
+      // Carga header.html y lo inserta en el div#header
+      fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('header').innerHTML = data;
+        })
+        .catch(error => console.error('Error cargando header:', error));
+    </script>
+
+    <h1>Quienes somos</h1>
+    <h2>Principios</h2>
+    <p>La Roca Learning Center es un centro de aprendizaje 100% cristiano que provee un
+ambiente de respeto, apoyo y trabajo fundamentado en los rasgos de carácter de nuestro
+Señor y Salvador Jesucristo.
+Su enseñanza se basa en el currículo académico ACE (Accelerated Christian Education), el
+cual promueve un aprendizaje individual y personalizado, guiando al alumno a pensar de
+manera lógica, bíblica e íntegra.</p>
+
+    
+  </body>
+</html>

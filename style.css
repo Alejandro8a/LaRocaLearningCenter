@@ -30,6 +30,16 @@
   /* Optional: use font-display: swap; for better performance */
   font-display: swap;
 }
+@font-face {
+  font-family: "Ramillas";
+  /* Name you will use in CSS */
+  src: url("fonts/TT\ Ramillas\ Initials\ Trial\ Regular.ttf") format("opentype");
+  /* Path to your file and format descriptor */
+  font-weight: normal;
+  font-style: normal;
+  /* Optional: use font-display: swap; for better performance */
+  font-display: swap;
+}
 
 h1 {
   text-align: center;
@@ -624,4 +634,23 @@ p {
   top: -35px;
   left: 50%;
   transform: translateX(-50%);
+}
+.vida_unidos{
+  margin-top: 0px;
+}
+.vida_unidos_gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.vida_unidos_gallery > img {
+  width: 200px;
+}
+.vida_unidos > h2 {
+  font-size: 60px;
+  font-family: Ramillas;
+  font-style: italic;
+  font-weight:bold;
+  margin: 0px;
 }

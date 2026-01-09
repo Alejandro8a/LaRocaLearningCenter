@@ -30,10 +30,22 @@
   /* Optional: use font-display: swap; for better performance */
   font-display: swap;
 }
+
 @font-face {
-  font-family: "Ramillas";
+  font-family: "Ramillas_b";
   /* Name you will use in CSS */
-  src: url("fonts/TT\ Ramillas\ Initials\ Trial\ Regular.ttf") format("opentype");
+  src: url("fonts/TT\ Ramillas\ Trial\ Bold\ Italic.ttf") format("opentype");
+  /* Path to your file and format descriptor */
+  font-weight: normal;
+  font-style: normal;
+  /* Optional: use font-display: swap; for better performance */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ramillas_r";
+  /* Name you will use in CSS */
+  src: url("fonts/TT\ Ramillas\ Trial\ ExtraLight.ttf") format("opentype");
   /* Path to your file and format descriptor */
   font-weight: normal;
   font-style: normal;
@@ -576,6 +588,7 @@ p {
   border-color: #9ea0a1;
   border-width: 1px;
 }
+
 .nivel_a_grados_card1 {
   display: flex;
   flex-direction: column;
@@ -586,22 +599,23 @@ p {
   width: 360px;
   margin-top: 20px;
   margin-bottom: 20px;
-  padding-top: 20px; 
-  padding-bottom: 20px;  
+  padding-top: 20px;
+  padding-bottom: 20px;
   position: relative;
   border-style: solid;
   border-color: #9ea0a1;
   border-width: 1px;
 }
 
-.nivel_a_grados_card > h3 {
+.nivel_a_grados_card>h3 {
   font-family: Garet;
   width: 100%;
   min-height: 70px;
   margin: 5px;
   color: #2c05f2;
 }
-.nivel_a_grados_card1 > h3 {
+
+.nivel_a_grados_card1>h3 {
   font-family: Garet;
   width: 100%;
   min-height: 70px;
@@ -629,28 +643,40 @@ p {
   left: 50%;
   transform: translateX(-50%);
 }
+
 .nivel_a_grados_card_img1 {
   position: absolute;
   top: -35px;
   left: 50%;
   transform: translateX(-50%);
 }
-.vida_unidos{
-  margin-top: 0px;
+
+.vida_h1 {
+  font-size: 60px;
+  margin-bottom: 0px;
+  line-height: 0.9;
+  font-family: Ramillas_r;
 }
+
+.vida_unidos {
+  margin-top: 0px;
+  height: min-content;
+}
+
 .vida_unidos_gallery {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 15px;
 }
-.vida_unidos_gallery > img {
+
+.vida_unidos_gallery>img {
   width: 200px;
 }
-.vida_unidos > h2 {
+
+.vida_unidos>h2 {
   font-size: 60px;
-  font-family: Ramillas;
-  font-style: italic;
-  font-weight:bold;
+  font-family: Ramillas_b;
   margin: 0px;
+  line-height: 0.9;
 }

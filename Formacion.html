@@ -5,8 +5,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="background-color: rgb(130,132,134);">
-  <div id="header"></div>
+<body>
+  <div id="header" style="margin: 0;"></div>
   <script>
     // Carga header.html y lo inserta en el div#header
     fetch('header.html')
@@ -16,37 +16,40 @@
       })
       .catch(error => console.error('Error cargando header:', error));
   </script>
+  <section class="formacion">
 
+    <h1 style="color:white">Formacion Cristiana</h1>
 
-  <h1 style="color:white">Formacion Cristiana</h1>
-  
-  <div class="formacion_galeria">
-    <div class="formacion_tarjeta">
-      <img  src="img/alabanza.jpg" alt="Alabanza">
-      <div class="formacion_overlay">
-        <p>ALABANZA</p>
-        <br>
-        <p>Durante el tiempo de devocional, antes de empezar, tenemos un momento donde todos los alumnos y maestros nos reunimos en el area de la capilla para alabar a nuestro Dios. </p>       
+    <div class="formacion_galeria">
+      <div class="formacion_tarjeta">
+        <img src="img/alabanza.jpg" alt="Alabanza">
+        <div class="formacion_overlay">
+          <p>ALABANZA</p>
+          <br>
+          <p>Durante el tiempo de devocional, antes de empezar, tenemos un momento donde todos los alumnos y maestros
+            nos reunimos en el area de la capilla para alabar a nuestro Dios. </p>
+        </div>
+      </div>
+      <div class="formacion_tarjeta">
+        <img src="img/chapel.png" alt="Chapel">
+        <div class="formacion_overlay">
+          <p>CHAPEL</p>
+          <br>
+          <p>Cada viernes se le se le solicita a un padre de familia para que venga y nos pueda compartir acerca de una
+            cita Biblica que se le pidio de antemano.</p>
+        </div>
+      </div>
+      <div class="formacion_tarjeta">
+        <img src="img/devocional.jpg" alt="Devocional">
+        <div class="formacion_overlay">
+          <p>DEVOCIONAL</p>
+          <br>
+          <p>Todas las mañanas tanto alumnos como maestros tenemos un tiempo de acercamiento con Dios, donde alumnos y
+            maestros estudiamos su Palabra.</p>
+        </div>
       </div>
     </div>
-    <div class="formacion_tarjeta">
-      <img  src="img/chapel.png" alt="Chapel">
-      <div class="formacion_overlay">
-        <p>CHAPEL</p>
-        <br>
-        <p>Cada viernes se le se le solicita a un padre de familia para que venga y nos pueda compartir acerca de una cita Biblica que se le pidio de antemano.</p>
-      </div>
-    </div>
-    <div class="formacion_tarjeta">
-      <img  src="img/devocional.jpg" alt="Devocional">
-      <div class="formacion_overlay">
-        <p>DEVOCIONAL</p>
-        <br>
-        <p>Todas las mañanas tanto alumnos como maestros tenemos un tiempo de acercamiento con Dios, donde alumnos y maestros estudiamos su Palabra.</p>
-      </div>
-    </div>
-  </div>
-  
+  </section>
 
 </body>
 

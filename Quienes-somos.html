@@ -1,29 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div id="header"></div>
-    <script>
-      // Carga header.html y lo inserta en el div#header
-      fetch('header.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('header').innerHTML = data;
-        })
-        .catch(error => console.error('Error cargando header:', error));
-    </script>
 
-    <h1>Quienes somos</h1>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="header"></div>
+  <script>
+    // Carga header.html y lo inserta en el div#header
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      })
+      .catch(error => console.error('Error cargando header:', error));
+  </script>
+  <h1>Quienes somos</h1>
+  <section id="id_iglesia">
+    <h1>Iglesia</h1>
+  </section>
+  <section id="id_escuela">
+    <h1>Escuela</h1>
+    <h2>8 Razones para estudiar en La Roca Learning Center:</h2>
+    <ul>
+      <li>Integración de principios bíblicos</li>
+      <li>Formación de carácter cristiano</li>
+      <li>Aprendizaje individualizado</li>
+      <li>Dominio del conocimiento</li>
+      <li>Pensamiento crítico</li>
+      <li>Educación bilingüe</li>
+      <li>Profesores comprometidos</li>
+      <li>Construir una comunidad Cristiana</li>
+    </ul>
+  </section>
+  <section id="id_principios">
     <h2>Principios</h2>
     <p>La Roca Learning Center es un centro de aprendizaje 100% cristiano que provee un
-ambiente de respeto, apoyo y trabajo fundamentado en los rasgos de carácter de nuestro
-Señor y Salvador Jesucristo.
-Su enseñanza se basa en el currículo académico ACE (Accelerated Christian Education), el
-cual promueve un aprendizaje individual y personalizado, guiando al alumno a pensar de
-manera lógica, bíblica e íntegra.</p>
+      ambiente de respeto, apoyo y trabajo fundamentado en los rasgos de carácter de nuestro
+      Señor y Salvador Jesucristo.
+      Su enseñanza se basa en el currículo académico ACE (Accelerated Christian Education), el
+      cual promueve un aprendizaje individual y personalizado, guiando al alumno a pensar de
+      manera lógica, bíblica e íntegra.</p>
+  </section>
 
-    
-  </body>
+</body>
+
 </html>

@@ -661,6 +661,7 @@ p {
 .vida_unidos {
   margin-top: 0px;
   height: min-content;
+  padding-bottom: 40px;
 }
 
 .vida_unidos_gallery {
@@ -816,4 +817,65 @@ p {
   object-fit: cover;
   object-position: center;
   display: block;
+}
+.vida_salidas_cul{
+  background-color:#CCCCCC;
+}
+.vida_salidas_cul_gallery{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.vida_salidas_cul_col1{  
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.vida_salidas_cul_col1 > h2{
+  font-size: 50px;
+}
+.vida_salidas_cul_card{
+  display: flex;
+  flex-direction: row;
+}
+.vida_salidas_cul_card_numero{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width:70px;
+  padding: 0px 10px;
+}
+.vida_salidas_cul_card_numero>h2{
+  margin: 0;          /* ✅ quita el margen default */
+  line-height: 1;     /* ✅ evita aire interno */
+  font-size: 50px;
+}
+.vida_salidas_cul_card_lugares{
+  display: flex;
+  flex-direction: column;
+  align-content:center;
+  width: 300px;
+}
+.vida_salidas_cul_card_lugares>h4{
+  font-family: Ramillas_r;
+  font-size: 28px;
+  margin: 1px;
+  padding: 4px;
+  line-height: 0.8;
+}
+.vida_salidas_cul_col2{
+  display: flex;
+  flex-direction: column;
+  width:40%;
+}
+.vida_salidas_cul_col2 >img{
+  margin:20px;
+}
+
+.vida_salidas_cul_col2 > img:first-child{
+  align-self: flex-end;
 }

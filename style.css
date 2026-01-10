@@ -689,7 +689,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  flex-wrap:wrap-reverse;
+  flex-wrap: wrap-reverse;
   gap: 15px;
 }
 
@@ -702,30 +702,118 @@ p {
   color: white;
   font-size: 20px;
   font-family: Garet;
-  width: 45%;
+  width: 35%;
 }
 
 .vida_horarios_col2 {
   display: flex;
   flex-direction: column;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   justify-items: center;
-  align-items:flex-end;
+  align-items: center;
   color: white;
-  font-size: 35px;
+  font-size: 50px;
   font-family: Garet;
-  border-style: dashed;
   width: 50%;
   padding-right: 40px;
   padding-top: 40px;
 }
-
+.vida_horarios_col2_card {
+  position: relative;
+}
+.vida_horarios_col2 > img {
+  object-fit: cover;
+}
 .vida_horarios_col2_salon {
-  width: 350px;
-
-
+  width: 500px;
 }
 
 .vida_horarios_col2_logo {
-  width: 70px;
+  width: 130px;
+  position: absolute;
+  top: 370px;
+  left: 70%;
+}
+.vida_memorias_gallery{
+  display:flex;
+  flex-direction: column;
+}
+.vida_memorias_row1{
+  height: 200px; 
+  justify-items: flex-start; 
+}
+.vida_memorias_row1 > h2{
+  font-size: 50px;
+  font-family: Ramillas_r;
+}
+.vida_memorias_row2{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.vida_memorias_col1{
+  display:flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.vida_memorias_col1_row1{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 20px;
+  overflow: hidden;
+}
+.vida_memorias_col1_row1 > img {
+  width: 180px;
+  height: 140px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin: auto;
+}
+.vida_memorias_col1_row2{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow: hidden;
+}
+.vida_memorias_col1_row2 > img {
+  width: 180px;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+.vida_memorias_col2{
+  display:flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.vida_memorias_col2_row1{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow: hidden;
+}
+.vida_memorias_col2_row1 > img {
+  width: 180px;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+.vida_memorias_col2_row2{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow: hidden;
+}
+.vida_memorias_col2_row2 > img {
+  width: 180px;
+  height: 140px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }

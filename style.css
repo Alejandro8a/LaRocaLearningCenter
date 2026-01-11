@@ -282,12 +282,12 @@ p {
 }
 
 /*testimonios*/
-.testim_h1 {
+.testim_h1_P {
   font-size: 40px;
   font-family: Garet;
 }
 
-.testim-gallery {
+.testim_padres_gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -295,7 +295,7 @@ p {
   padding-right: 80px;
 }
 
-.testim-card {
+.testim_card {
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -308,17 +308,17 @@ p {
 
 }
 
-.testim-card>h4 {
+.testim_card>h4 {
   font-family: Garet;
 }
 
-.testim-card>p {
+.testim_card>p {
   margin-top: 20px;
   padding-top: 0px;
   font-family: Garet;
 }
 
-.testim-card>img {
+.testim_card>img {
 
   width: 250px;
   height: 190px;
@@ -326,7 +326,7 @@ p {
 
 }
 
-.testim-card-b {
+.testim_card-b {
   background-color: #e6e6e6;
   display: flex;
   flex-direction: column;
@@ -338,19 +338,19 @@ p {
   width: 250px;
 }
 
-.testim-card-b>p {
+.testim_card-b>p {
   margin-top: 20px;
   padding-top: 0px;
   font-family: Garet;
 }
 
-.testim-card-b>img {
+.testim_card-b>img {
   width: auto;
   height: 200px;
 
 }
 
-.testim-card-b>h4 {
+.testim_card-b>h4 {
   font-family: Garet;
 }
 
@@ -1030,6 +1030,7 @@ p {
   padding: 100px;
   padding-top: 0.9px;
 }
+
 .quienes_s_mision_v_gallery {
   display: flex;
   flex-wrap: wrap;
@@ -1045,14 +1046,14 @@ p {
   /*align-content: flex-start;*/
   text-align: center;
   height: 400px;
-  width: 350px;
+  width: 370px;
   padding-bottom: 30px;
   padding-top: 10px;
   border-style: solid;
   border-color: #828486;
   border-width: 1px;
   line-height: 1.1;
-  
+
 }
 
 .quienes_s_card>h3 {
@@ -1069,7 +1070,7 @@ p {
   padding: 0 15px;
   margin: 8px 0;
   font-family: Garet;
-  /*height: 100%;*/
+  font-size: 15px;
   width: 80%;
   text-align: justify;
 }
@@ -1080,4 +1081,55 @@ p {
   padding-bottom: 0;
   margin-bottom: 0;
   padding-top: 20px;
+}
+
+.quienes_s_titulo_f {
+  margin-top: 55px;
+  font-family: Garet;
+  font-weight: bold;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center
+}
+/*testimonios maestros*/
+.testim_h1_M {
+  padding-top: 80px;
+}
+.testim_maestros_gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+  padding-right: 80px;
+}
+
+.testim_card_m {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  height: 500px;
+  width: 250px;
+  
+
+}
+
+.testim_card_m>h4 {
+  font-family: Garet;
+}
+
+.testim_card_m>p {
+  margin-top: 20px;
+  padding-top: 0px;
+  font-family: Garet;
+}
+
+.testim_card_m>img {
+  width: 250px;
+  height: 190px;
+  align-items: center;
+
 }

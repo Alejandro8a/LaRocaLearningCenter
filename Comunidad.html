@@ -1,48 +1,70 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div id="header"></div>
-    <script>
-      // Carga header.html y lo inserta en el div#header
-      fetch('header.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('header').innerHTML = data;
-        })
-        .catch(error => console.error('Error cargando header:', error));
-    </script>
 
-    <h1>Comunidad</h1>
-    <section id="id_comunidad_testim_padres" class="comunidad_testim_padres">
-         <h1 style="text-align: left; padding-left: 150px;" class="testim_h1">Testimonios Padres</h1>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-        <div class="testim-gallery">
-            <div class="testim-card-b" >
-                <p>La forma de enseñar a los niños es buena, la forma en como aprenden día con día de la palabra de Dios y al mismo tiempo su enseñaza es buena.</p>
-                <img src="img/alabanza.jpg" alt="">
-                <h4 class="h3">Karla R.</h4>
-            </div>
-      
-            <div class="testim-card" >
-                <p>Lo mejor que nos pudo haber pasado fue encontrar esta escuela, ha sido de gran bendicíon para mi hija!!!! Excelente nivel académico.</p>
-                <img src="img/chapel.png" alt="">
-                <h4 class="h3">Maribel G.</h4>
-            </div>
-            <div class="testim-card-b" >
-                <p>texto3</p>
-                <img src="img/devocional.jpg" alt="">
-                <h4 class="h3">Nombre</h4>
-            </div>
-        </div>
-    </section>
-    <section id="id_comunidad_testim_maestros" class="comunidad_testim_maestros" >
+<body>
+  <div id="header"></div>
+  <script>
+    // Carga header.html y lo inserta en el div#header
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      })
+      .catch(error => console.error('Error cargando header:', error));
+  </script>
 
-    </section>
-    <section id="id_comunidad_testim_alumnos" class="comunidad_testim_alumnos">
+  <h1>Comunidad</h1>
+  <section id="id_comunidad_testim_padres" class="comunidad_testim_padres">
+    <h1 style="text-align: left; padding-left: 150px;" class="testim_h1_P">Testimonios Padres</h1>
 
-    </section>
-  </body>
+    <div class="testim_padres_gallery">
+      <div class="testim_card-b">
+        <p>“Como mamá, elegir la escuela para mis hijas ha sido una de las decisiones más importantes. Hoy puedo decir
+          con gratitud que verlas crecer en esta escuela ha sido una verdadera bendición”.</p>
+        <img src="img/testim_padres_m_p.png" alt="Martha_P">
+        <h4 class="h3">Martha P.</h4>
+      </div>
+      <div class="testim_card">
+        <p>texto3</p>
+        <img src="img/testim_padres_a_o.png" alt="Alejandro_O">
+        <h4 class="h3">Alejandro O.</h4>
+      </div>
+      <div class="testim_card-b">
+        <p>Lo mejor que nos pudo haber pasado fue encontrar esta escuela, ha sido de gran bendicíon para mi hija!!!!
+          Excelente nivel académico.</p>
+        <img src="img/testim_padres_m_g.png" alt="Maribel_G">
+        <h4 class="h3">Maribel G.</h4>
+      </div>
+    </div>
+  </section>
+  <section id="id_comunidad_testim_maestros" class="comunidad_testim_maestros">
+    <h1 style="text-align: left; padding-left: 150px;" class="testim_h1_M">Testimonios Maestros</h1>
+
+    <div class="testim_maestros_gallery">
+      <div class="testim_card_m">
+        <img src="img/testim_maestros_d_t.png" alt="Miss_Dani">
+        <h4>Danielle T</h4>
+        <p>texto</p>
+      </div>
+      <div class="testim_card_m">
+        <img src="img/testim_maestros_c_t.png" alt="Profe_Carlos">
+        <h4>Carlos T</h4>
+        <p>texto</p>
+      </div>
+      <div class="testim_card_m">
+        <img src="img/testim_maestros_m_a.png" alt="Profe_Mario">
+        <h4>Mario A</h4>
+        <p>texto</p>
+      </div>
+    </div>
+  </section>
+  <section id="id_comunidad_testim_alumnos" class="comunidad_testim_alumnos">
+
+  </section>
+</body>
+
 </html>

@@ -1213,16 +1213,16 @@ p {
 }
 .contacto_cuadrante4>h3 {
   color:white;
-  line-height: 0.8;
+  line-height: 0.9;
 }
 .contacto_cuadrante4>h3:first-child {
   font-size:60px;
   font-family:Tex; 
-  margin:0;
+  margin-bottom:0;
 }
 .contacto_cuadrante4>h3:last-of-type {
   font-family:Playlist; 
-  margin:0;
+  margin-top:0;
   font-size:32px;
 }
 .contacto_cuadrante4>p {

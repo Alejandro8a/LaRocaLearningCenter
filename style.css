@@ -1071,6 +1071,7 @@ p {
   font-family: Garet;
   /*height: 100%;*/
   width: 80%;
+  text-align: justify;
 }
 
 .quienes_s_card>img {

@@ -240,12 +240,14 @@ p {
   text-align: center;
   font-size: 15px;
 }
-.formacion{
-  background-color: rgb(130,132,134); 
+
+.formacion {
+  background-color: rgb(130, 132, 134);
   border-style: dotted;
-  border-color: rgb(0, 0, 0,0);
+  border-color: rgb(0, 0, 0, 0);
   margin: 0;
 }
+
 .formacion_galeria {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -725,12 +727,15 @@ p {
   padding-right: 40px;
   padding-top: 40px;
 }
+
 .vida_horarios_col2_card {
   position: relative;
 }
-.vida_horarios_col2 > img {
+
+.vida_horarios_col2>img {
   object-fit: cover;
 }
+
 .vida_horarios_col2_salon {
   width: 500px;
 }
@@ -741,39 +746,45 @@ p {
   top: 370px;
   left: 70%;
 }
-.vida_memorias_gallery{
-  display:flex;
+
+.vida_memorias_gallery {
+  display: flex;
   flex-direction: column;
   padding-bottom: 20px;
 }
-.vida_memorias_row1{
-  height: 200px; 
-  justify-items: flex-start; 
+
+.vida_memorias_row1 {
+  height: 200px;
+  justify-items: flex-start;
 }
-.vida_memorias_row1 > h2{
+
+.vida_memorias_row1>h2 {
   font-size: 50px;
   font-family: Ramillas_r;
 }
-.vida_memorias_row2{
+
+.vida_memorias_row2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
 }
-.vida_memorias_col1{
-  display:flex;
+
+.vida_memorias_col1 {
+  display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.vida_memorias_col1_row1{
+.vida_memorias_col1_row1 {
   display: grid;
   grid-template-columns: 40% 60%;
   gap: 20px;
   overflow: hidden;
 }
-.vida_memorias_col1_row1 > img {
+
+.vida_memorias_col1_row1>img {
   width: 180px;
   height: 140px;
   object-fit: cover;
@@ -781,162 +792,291 @@ p {
   display: block;
   margin: auto;
 }
-.vida_memorias_col1_row2{
+
+.vida_memorias_col1_row2 {
   display: flex;
   flex-direction: row;
   gap: 20px;
   overflow: hidden;
 }
-.vida_memorias_col1_row2 > img {
+
+.vida_memorias_col1_row2>img {
   width: 180px;
   height: 280px;
   object-fit: cover;
   object-position: center;
   display: block;
 }
-.vida_memorias_col2{
-  display:flex;
+
+.vida_memorias_col2 {
+  display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.vida_memorias_col2_row1{
+
+.vida_memorias_col2_row1 {
   display: flex;
   flex-direction: row;
   gap: 20px;
   overflow: hidden;
 }
-.vida_memorias_col2_row1 > img {
+
+.vida_memorias_col2_row1>img {
   width: 180px;
   height: 280px;
   object-fit: cover;
   object-position: center;
   display: block;
 }
-.vida_memorias_col2_row2{
+
+.vida_memorias_col2_row2 {
   display: flex;
   flex-direction: row;
   gap: 20px;
   overflow: hidden;
 }
-.vida_memorias_col2_row2 > img {
+
+.vida_memorias_col2_row2>img {
   width: 180px;
   height: 140px;
   object-fit: cover;
   object-position: center;
   display: block;
 }
-.vida_salidas_cul{
-  background-color:#CCCCCC;
-}
-.vida_salidas_cul_gallery{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.vida_salidas_cul_col1{  
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.vida_salidas_cul_col1 > h2{
-  font-size: 50px;
-}
-.vida_salidas_cul_card{
-  display: flex;
-  flex-direction: row;
-}
-.vida_salidas_cul_card_numero{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-start;
-  width:70px;
-  padding: 0px 10px;
-}
-.vida_salidas_cul_card_numero>h2{
-  margin: 0;          /* ✅ quita el margen default */
-  line-height: 1;     /* ✅ evita aire interno */
-  font-size: 50px;
-}
-.vida_salidas_cul_card_lugares{
-  display: flex;
-  flex-direction: column;
-  align-content:center;
-  width: 300px;
-}
-.vida_salidas_cul_card_lugares>h4{
-  font-family: Ramillas_r;
-  font-size: 28px;
-  margin: 1px;
-  padding: 4px;
-  line-height: 0.8;
-}
-.vida_salidas_cul_col2{
-  display: flex;
-  flex-direction: column;
-  width:40%;
-}
-.vida_salidas_cul_col2 >img{
-  margin:20px;
+
+.vida_salidas_cul {
+  background-color: #CCCCCC;
 }
 
-.vida_salidas_cul_col2 > img:first-child{
-  align-self: flex-end;
-}
-.vida_eventos_e_gallery{
+.vida_salidas_cul_gallery {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.vida_eventos_e_col1{  
+
+.vida_salidas_cul_col1 {
   width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
-.vida_eventos_e_col1 > h2{
+
+.vida_salidas_cul_col1>h2 {
   font-size: 50px;
 }
-.vida_eventos_e_card{
+
+.vida_salidas_cul_card {
   display: flex;
   flex-direction: row;
 }
-.vida_eventos_e_card_numero{
+
+.vida_salidas_cul_card_numero {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-start;
-  width:70px;
+  width: 70px;
   padding: 0px 10px;
 }
-.vida_eventos_e_card_numero>h2{
-  margin: 0;          /* ✅ quita el margen default */
-  line-height: 1;     /* ✅ evita aire interno */
+
+.vida_salidas_cul_card_numero>h2 {
+  margin: 0;
+  /* ✅ quita el margen default */
+  line-height: 1;
+  /* ✅ evita aire interno */
   font-size: 50px;
 }
-.vida_eventos_e_card_lugares{
+
+.vida_salidas_cul_card_lugares {
   display: flex;
   flex-direction: column;
-  align-content:center;
-  width: 450px;
+  align-content: center;
+  width: 300px;
 }
-.vida_eventos_e_card_lugares>h4{
+
+.vida_salidas_cul_card_lugares>h4 {
   font-family: Ramillas_r;
   font-size: 28px;
   margin: 1px;
   padding: 4px;
   line-height: 0.8;
 }
-.vida_eventos_e_col2{
+
+.vida_salidas_cul_col2 {
   display: flex;
   flex-direction: column;
-  width:45%;
+  width: 40%;
 }
-.vida_eventos_e_col2 >img{
-  margin:20px;
+
+.vida_salidas_cul_col2>img {
+  margin: 20px;
+}
+
+.vida_salidas_cul_col2>img:first-child {
+  align-self: flex-end;
+}
+
+.vida_eventos_e_gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.vida_eventos_e_col1 {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.vida_eventos_e_col1>h2 {
+  font-size: 50px;
+}
+
+.vida_eventos_e_card {
+  display: flex;
+  flex-direction: row;
+}
+
+.vida_eventos_e_card_numero {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 70px;
+  padding: 0px 10px;
+}
+
+.vida_eventos_e_card_numero>h2 {
+  margin: 0;
+  /* ✅ quita el margen default */
+  line-height: 1;
+  /* ✅ evita aire interno */
+  font-size: 50px;
+}
+
+.vida_eventos_e_card_lugares {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 450px;
+}
+
+.vida_eventos_e_card_lugares>h4 {
+  font-family: Ramillas_r;
+  font-size: 28px;
+  margin: 1px;
+  padding: 4px;
+  line-height: 0.8;
+}
+
+.vida_eventos_e_col2 {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.vida_eventos_e_col2>img {
+  margin: 20px;
+}
+
+.escuela_titulo {
+  font-size: larger;
+}
+
+.escuela_titulo>h2 {
+  margin: 0;
+  font-size: 50px;
+  line-height: 0.9;
+}
+
+.escuela_razones {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 100px;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.escuela_razones>li {
+  border-style: solid;
+  border-color: #bad34b;
+  border-radius: 35px;
+  padding: 15px;
+  width: 25%;
+  text-align: center;
+  font-size: 15px;
+  font-family: Garet;
+}
+
+.escuela_principios_p {
+  font-family: Garet;
+  font-size: 24px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  padding-top: 0.9px;
+}
+.quienes_s_mision_v_gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.quienes_s_card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /*align-content: flex-start;*/
+  text-align: center;
+  height: 400px;
+  width: 350px;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  border-style: solid;
+  border-color: #828486;
+  border-width: 1px;
+  line-height: 1.1;
+  
+}
+
+.quienes_s_card>h3 {
+  font-family: Garet;
+  width: 100%;
+  min-height: 50px;
+  margin: 0;
+  padding-bottom: 0;
+  padding-top: 20px;
+}
+
+.quienes_s_card>p {
+  display: block;
+  padding: 0 15px;
+  margin: 8px 0;
+  font-family: Garet;
+  /*height: 100%;*/
+  width: 80%;
+}
+
+.quienes_s_card>img {
+  width: 80px;
+  height: 80px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  padding-top: 20px;
 }

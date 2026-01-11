@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div id="header"></div>
-    <script>
-      // Carga header.html y lo inserta en el div#header
-      fetch('header.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('header').innerHTML = data;
-        })
-        .catch(error => console.error('Error cargando header:', error));
-    </script>
 
-    <h1>Admision</h1>
-    <h2>En La Roca Learning Center tenemos inscripciones abiertas todo el año.</h2>
-    <h2>A continuación, le mostramos los pasos para el Proceso de Admisión:</h2>
-    <ol>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="header"></div>
+  <script>
+    // Carga header.html y lo inserta en el div#header
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      })
+      .catch(error => console.error('Error cargando header:', error));
+  </script>
+
+  <h1>Admision</h1>
+  <h2>En La Roca Learning Center tenemos inscripciones abiertas todo el año.</h2>
+  <h2>A continuación, le mostramos los pasos para el Proceso de Admisión:</h2>
+  <div class="admision_requisitos">
+    <ol class="admision_requisitos_listado">
       <li>Entrevista con Padres</li>
       <li>Entrevista con el alumno aspirante</li>
       <li>Determinar fecha para examen diagnóstico</li>
@@ -32,12 +35,20 @@
       <li>Cubrir 50 % del pedido de uniforme el saldo se cubrirá al recibir el uniforme</li>
       <li>Leer y firmar de total acuerdo al reglamento general del Colegio.</li>
       <li>Llenar y entregar el Formato de Datos del Alumno.</li>
-      <li>Llenar y entregar el Reglamento de Estacionamiento y Formato de Vehículo para solicitar su marbete</li>
-      <li>Entregar el Formato de personas autorizadas a recoger al alumno(a) con fotografía y copia de credencial de Elector de sus padres y hasta 5 personas más.</li>
+      <li>Llenar y entregar el Reglamento de Estacionamiento y Formato de Vehículo para solicitar su marbete
+        (solicitarlo en dirección)</li>
+      <li>Entregar el Formato de personas autorizadas a recoger al alumno(a) con fotografía y copia de credencial de
+        Elector de sus padres y hasta 5 personas más.</li>
       <li>Llenar y entregar el Formato de Historia Médica de cada alumno(a)</li>
     </ol>
-      <a href="docs/Formato Datos del Alumno.pdf" target="_blank">Formato Datos del Alumno</a>
-      <a href="docs/Formato Personas Autorizadas.pdf"></a>
-    
-  </body>
+
+  </div>
+  <div style="display: flex; align-items: center; flex-direction: column;">
+    <a href="docs/Formato Datos del Alumno.pdf" target="_blank">Formato Datos del Alumno</a>
+<br>
+    <a href="docs/Formato Personas Autorizadas.pdf" target="_blank">Formato Personas Autorizadas</a>
+ <br>   
+  </div>
+</body>
+
 </html>

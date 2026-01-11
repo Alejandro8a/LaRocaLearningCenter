@@ -1213,7 +1213,7 @@ p {
 }
 .contacto_cuadrante4>h3 {
   color:white;
-  line-height: 0.9;
+  line-height: 0.8;
 }
 .contacto_cuadrante4>h3:first-child {
   font-size:60px;
@@ -1223,7 +1223,7 @@ p {
 .contacto_cuadrante4>h3:last-of-type {
   font-family:Playlist; 
   margin-top:0;
-  font-size:32px;
+  font-size:30px;
 }
 .contacto_cuadrante4>p {
   color:white;
@@ -1231,4 +1231,23 @@ p {
 }
 .contacto_cuadrante4_img {
   width: 20px;
+}
+.admision_requisitos {
+  display: flex;
+  justify-content: center;
+}
+.admision_requisitos >ol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: justify;
+  border-style: solid;
+  border-color: #bad34b;
+  width: 600px;
+  padding-top:30px ;
+  padding-bottom: 30px;
+
+}
+.admision_requisitos_listado > li {
+  width: 550px;
 }

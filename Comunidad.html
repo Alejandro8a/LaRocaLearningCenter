@@ -41,30 +41,62 @@
       </div>
     </div>
   </section>
+  <section id="id_comunidad_testim_alumnos" class="comunidad_testim_alumnos">
+    <h1 style="text-align: left; padding-left: 150px;" class="testim_h1_A">Testimonios Alumnos</h1>
+    <div class="testim_alumnos_gallery">
+      <div class="testim_card_alumnos">
+        <img src="img/testim_alumnos_1.png" alt="alumno1">
+        <h4>Carolina O.</h4>
+        <p>Cuando entre a la escuela pense que era como cualquier otra escuela, pero con La Roca es diferente,
+          los maestros se preocupan genuinamente por los niños; es como una familia en la que no hay divisiones,
+          en la que todo esta basada en Dios y nosotros como escuela tratamos de parecernos cada día mas a Él.</p>  
+      </div>
+      <div class="testim_card_alumnos">
+        <img src="img/testim_alumnos_2.png" alt="alumno2">
+        <h4>Marielle A.</h4>
+        <p>texto</p>
+      </div>
+      <div class="testim_card_alumnos">
+        <img src="img/testim_alumnos_3.png" alt="alumno3">
+        <h4>Asiel T.</h4>
+        <p>Al iniciar tanto en esta escuela como en el sistema yo no me esperaba lo importante que iba a ser para mi vida,
+          me enseño mucho, a ser más organizado y establecerme metas a mi vida diaria y lo más importante es que aprendo
+          de Dios todos los días y los maestros me instruyen a crecer en su Palabra.
+        </p>
+      </div>
+    </div>
+  </section>
   <section id="id_comunidad_testim_maestros" class="comunidad_testim_maestros">
     <h1 style="text-align: left; padding-left: 150px;" class="testim_h1_M">Testimonios Maestros</h1>
 
     <div class="testim_maestros_gallery">
       <div class="testim_card_m">
         <img src="img/testim_maestros_d_t.png" alt="Miss_Dani">
-        <h4>Danielle A</h4>
-        <p>texto</p>
+        <h4>Danielle A.</h4>
+        <p>Cuando entré a trabajar a La Roca Learning Center tenía muchos nervios después de más de cinco años de Homeschooling. Sin embargo, la experiencia me ha sorprendido, ya que más que una escuela, he encontrado un ministerio donde enseñar y ministrar a los alumnos con la Palabra de Dios es un gran privilegio y un gran reto. Oro para que Dios me permita seguir sirviendo con dedicación y reflejar el carácter de Cristo en cada alumno a través de mi vida y trabajo.</p>
       </div>
       <div class="testim_card_m">
         <img src="img/testim_maestros_c_t.png" alt="Profe_Carlos">
-        <h4>Carlos T</h4>
+        <h4>Carlos T.</h4>
         <p>texto</p>
       </div>
       <div class="testim_card_m">
         <img src="img/testim_maestros_m_a.png" alt="Profe_Mario">
-        <h4>Mario A</h4>
+        <h4>Mario A.</h4>
         <p>texto</p>
       </div>
     </div>
   </section>
-  <section id="id_comunidad_testim_alumnos" class="comunidad_testim_alumnos">
-
-  </section>
+  <div id="footer" style="margin: 0;"></div>
+    <script>
+        // Carga header.html y lo inserta en el div#header
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Error cargando footer:', error));
+    </script>
 </body>
 
 </html>

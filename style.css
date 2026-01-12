@@ -251,6 +251,7 @@ p {
 .formacion_galeria {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  padding: 30px;
 }
 
 .formacion_tarjeta {
@@ -290,7 +291,7 @@ p {
 .testim_padres_gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: center;
   margin: 20px;
   padding-right: 80px;
 }
@@ -923,6 +924,7 @@ p {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  padding-bottom: 50px;
 }
 
 .vida_eventos_e_col1 {
@@ -1094,7 +1096,12 @@ p {
 
 /*testimonios maestros*/
 .testim_h1_M {
-  padding-top: 80px;
+  font-size: 40px;
+  font-family: Garet;
+}
+
+.comunidad_testim_maestros {
+  padding: 30px;
 }
 
 .testim_maestros_gallery {
@@ -1103,6 +1110,7 @@ p {
   justify-content: center;
   margin: 20px;
   padding-right: 80px;
+  padding-bottom: 200px;
 }
 
 .testim_card_m {
@@ -1112,7 +1120,7 @@ p {
   justify-content: space-evenly;
   text-align: center;
   margin: 10px;
-  padding: 10px;
+  padding: 30px;
   height: 500px;
   width: 250px;
 
@@ -1135,11 +1143,14 @@ p {
   align-items: center;
 
 }
+
 .contacto_gallery {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
+  height: 950px;
 }
+
 .contacto_cuadrante1 {
   background-image: url('img/contacto_datos.png');
   background-size: cover;
@@ -1147,29 +1158,34 @@ p {
   background-repeat: no-repeat;
   margin: 0px;
   min-width: 350px;
-  border-top:5px solid #bad34b;
-  border-bottom:5px solid #bad34b;
+  border-top: 5px solid #bad34b;
+  border-bottom: 5px solid #bad34b;
 }
+
 .contacto_cuadrante2 {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 35% 65%;
 
 }
+
 .contacto_cuadrante2_cuadrante1 {
   display: grid;
   justify-content: center;
   align-content: center;
   font-size: 25px;
 }
+
 .contacto_cuadrante2_cuadrante2 {
   display: grid;
   justify-content: center;
   align-content: center;
 }
+
 .contacto_cuadrante2_cuadrante2>img {
   width: 70px;
 }
+
 .contacto_cuadrante2_cuadrante3 {
   display: flex;
   flex-direction: column;
@@ -1177,10 +1193,12 @@ p {
   align-content: space-evenly;
   align-items: flex-end;
 }
+
 .contacto_cuadrante2_cuadrante3>p {
   padding-right: 5px;
   color: #a1d683;
 }
+
 .contacto_cuadrante2_cuadrante4 {
   display: flex;
   flex-direction: column;
@@ -1188,10 +1206,12 @@ p {
   align-content: space-evenly;
   align-items: flex-start;
 }
+
 .contacto_cuadrante2_cuadrante4>p {
   padding-left: 5px;
   text-align: left;
 }
+
 .contacto_cuadrante3 {
   display: flex;
   flex-direction: column;
@@ -1199,44 +1219,53 @@ p {
   align-items: center;
   background-color: #828486;
 }
+
 .contacto_cuadrante3>a {
   text-align: right;
   color: white;
   width: 200px;
   border-bottom: 2px solid white;
 }
+
 .contacto_cuadrante4 {
   display: grid;
   justify-items: center;
   align-items: center;
   background-color: #828486;
 }
+
 .contacto_cuadrante4>h3 {
-  color:white;
+  color: white;
   line-height: 0.8;
 }
+
 .contacto_cuadrante4>h3:first-child {
-  font-size:60px;
-  font-family:Tex; 
-  margin-bottom:0;
+  font-size: 60px;
+  font-family: Tex;
+  margin-bottom: 0;
 }
+
 .contacto_cuadrante4>h3:last-of-type {
-  font-family:Playlist; 
-  margin-top:0;
-  font-size:30px;
+  font-family: Playlist;
+  margin-top: 0;
+  font-size: 30px;
 }
+
 .contacto_cuadrante4>p {
-  color:white;
-  width:450px;
+  color: white;
+  width: 450px;
 }
+
 .contacto_cuadrante4_img {
   width: 20px;
 }
+
 .admision_requisitos {
   display: flex;
   justify-content: center;
 }
-.admision_requisitos >ol {
+
+.admision_requisitos>ol {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -1244,10 +1273,132 @@ p {
   border-style: solid;
   border-color: #bad34b;
   width: 600px;
-  padding-top:30px ;
+  padding-top: 30px;
   padding-bottom: 30px;
 
 }
-.admision_requisitos_listado > li {
+
+.admision_requisitos_listado>li {
   width: 550px;
+}
+
+.comunidad_testim_alumnos {
+  padding: 40px;
+}
+
+.testim_alumnos_gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+  padding-right: 80px;
+}
+
+.testim_card_alumnos {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  align-content: center;
+  margin: 10px;
+  padding: 10px;
+  height: 500px;
+  width: 250px;
+  padding: 30px;
+  /*border-style: solid;
+  margin: 50px;*/
+
+
+}
+
+.testim_card_alumnos>h4 {
+  font-family: Garet;
+}
+
+.testim_card_alumnos>p {
+  margin-top: 20px;
+  padding-top: 0px;
+  font-family: Garet;
+}
+
+.testim_card_alumnos>img {
+  width: 250px;
+  height: 250px;
+  align-items: center;
+
+}
+
+.testim_h1_A {
+  font-size: 40px;
+  font-family: Garet;
+}
+
+.testim_card_m>img {
+  border-style: solid;
+  border-color: #CCCCCC;
+  padding: 30px;
+  background-color: #CCCCCC;
+}
+
+.footer {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.footer_col1 {
+  display: block;
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 0.1%;
+  margin-left: 8%;
+}
+
+.footer_col2 {
+  display: block;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 40%;
+  line-height: 0.1;
+  padding-top: 8px;
+}
+
+.footer_col3>img {
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 28%;
+}
+.footer_col1>p{
+  font-size: 12px;
+}
+.footer_col2>p{
+  font-size: 12px;
+}
+.contacto_aviso{
+  text-align: left;
+  padding-left: 10%;
+}
+.contacto_aviso > h2 {
+text-align: left;
+}
+.contacto_aviso > h3 {
+text-align: left;
+}
+.contacto_aviso > h4 {
+text-align: left;
+}
+.contacto_aviso > h5 {
+text-align: left;
+}
+.contacto_aviso > p {
+text-align: left;
+}
+.contacto_aviso > il {
+text-align: left;
 }

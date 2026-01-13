@@ -706,9 +706,9 @@ p {
 .vida_horarios_col1 {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  justify-items: flex-end;
-  justify-content: flex-end;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
   color: white;
   font-size: 20px;
   font-family: Garet;
@@ -866,6 +866,14 @@ p {
 
 .vida_salidas_cul_col1>h2 {
   font-size: 50px;
+  font-family: Garet;
+}
+.vida_salidas_cul_col1>h4 {
+  font-size: 50px;
+  font-family: Garet;
+}
+.vida_salidas_cul_col1 >h5{
+  font-family: Garet;
 }
 
 .vida_salidas_cul_card {
@@ -880,6 +888,7 @@ p {
   align-items: flex-start;
   width: 70px;
   padding: 0px 10px;
+  font-family: Garet;
 }
 
 .vida_salidas_cul_card_numero>h2 {
@@ -925,6 +934,7 @@ p {
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding-bottom: 50px;
+  font-family: Garet;
 }
 
 .vida_eventos_e_col1 {
@@ -933,6 +943,7 @@ p {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  font-family: Garet;
 }
 
 .vida_eventos_e_col1>h2 {
@@ -983,7 +994,7 @@ p {
 }
 
 .vida_eventos_e_col2>img {
-  margin: 20px;
+  margin: 20px;  
 }
 
 .escuela_titulo {
@@ -1047,14 +1058,15 @@ p {
   align-items: center;
   /*align-content: flex-start;*/
   text-align: center;
-  height: 400px;
+  height: 390px;
   width: 370px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   padding-top: 10px;
   border-style: solid;
   border-color: #828486;
   border-width: 1px;
   line-height: 1.1;
+  margin-bottom: 60px;
 
 }
 
@@ -1401,4 +1413,7 @@ text-align: left;
 }
 .contacto_aviso > il {
 text-align: left;
+}
+.vida_salidas_cul_card_lugares>h5{
+  font-family: Garet;
 }
